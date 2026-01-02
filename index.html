@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Sorting Algorithm Visualizer</h1>
+  <p>Visual learning tool for classic sorting algorithms</p>
+</header>
+
+<section class="panel">
+  <select id="algo" onchange="changeAlgorithm()">
+    <option value="bubble">Bubble Sort</option>
+    <option value="selection">Selection Sort</option>
+    <option value="insertion">Insertion Sort</option>
+    <option value="merge">Merge Sort</option>
+    <option value="quick">Quick Sort</option>
+  </select>
+
+  <button onclick="play()">▶ Play</button>
+  <button onclick="pause()">⏸ Pause</button>
+  <button onclick="nextStep()">Next Step</button>
+  <button onclick="resetAlgo()">🔀 New Array</button>
+
+  <input type="range" min="20" max="200" value="80" id="speed">
+</section>
+
+<section id="bars"></section>
+
+<footer id="status">Bubble Sort Ready</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
